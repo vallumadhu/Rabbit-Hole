@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+.comment-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.comment {
+    width: 100%;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 14px 16px;
+}
+
+.comment p {
+    margin: 0;
+    color: #374151;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.btns-box {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 12px;
+}
+
+/* Like button */
+
+.btns-box div {
+    display: flex;
+    align-items: center;
+}
+
+.btns-box div button {
+    width: 34px;
+    height: 34px;
+    border: none;
+    background: transparent;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+
+.btns-box div img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.btns-box > button {
+    border: none;
+    background: transparent;
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.2s ease;
+}
+
+.btns-box > button:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}

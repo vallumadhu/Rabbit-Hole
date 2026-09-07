@@ -1,0 +1,112 @@
+.container {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    margin: 40px auto;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ffffff, #ffffff, #ffffff, #e8e8e8, #ffffff, #ffffff, #ffffff);
+    background-size: 300% 300%;
+    animation: gradientMove 4s ease-in-out infinite;
+}
+
+.img-container {
+    width: 100%;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.login-box {
+    padding: 28px;
+}
+
+.login-form {
+    width: 100%;
+    padding: 0;
+}
+
+.login-header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-header h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+}
+
+form input:focus {
+    border-color: #0e0e0e;
+}
+
+form button {
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #080808;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.extra-links {
+    margin-top: 16px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.extra-links a {
+    color: #6b7280;
+    text-decoration: none;
+}
+
+.extra-links a:hover {
+    color: #111827;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
